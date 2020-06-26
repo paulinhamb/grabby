@@ -96,7 +96,7 @@
       container: 'map', // container id
       style: 'mapbox://styles/mapbox/streets-v11', //stylesheet location
       center: [-19.931609, -43.944657], // starting position
-      zoom: 13,// starting zoom
+      zoom: 15,// starting zoom
       transformRequest: transformRequest
     });
 
@@ -142,7 +142,7 @@
               //set popup text 
               //You can adjust the values of the popup to match the headers of your CSV. 
               // For example: e.features[0].properties.Name is retrieving information from the field Name in the original CSV. 
-              var description = `<h3>` + e.features[0].properties.Nome + `</h3>` + `<h4>` + `<b>` + `Endere&ccedilo: ` + `</b>` + e.features[0].properties.Endere&ccedilo + `</h4>`;
+              var description = `<h3>` + e.features[0].properties.Nome + `</h3>` + `<h4>` + `<b>` + `Endereco: ` + `</b>` + e.features[0].properties.Endereco + `</h4>`;
 
               // Ensure that if the map is zoomed out such that multiple
               // copies of the feature are visible, the popup appears
